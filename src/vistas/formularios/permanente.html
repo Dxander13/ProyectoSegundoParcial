@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Registro Empleado Temporal</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	
+	
+
+</head>
+<body>
+<main role="main">
+
+	<section class="content-form">
+
+		<h2 class="sub-title">DATOS GENERALES</h2>
+
+		<form  id="registrar-form" >
+      <div class="width-4">
+        <input type="text" placeholder="Id *Ingresar para actualizar *" class="form-control"  id="id" /> 
+    </div> 
+            <div class="form-group width-12">
+                <div class="width-6">
+                    <input type="text" placeholder="Documento de Identificacion *" class="form-control"  id="dpi" /> 
+                </div> 	
+                <div class="width-6">
+                    <input type="text" placeholder="NIP *" class="form-control"  id="nip" /> 
+                </div> 	
+            </div>
+			<div class="form-group width-12">
+				 <div class="width-6">
+				  <input type="text" placeholder="Primer Nombre *" class="form-control"  id="primerNom" /> 
+                 </div> 
+                 <div class="width-6">
+                    <input type="text" placeholder="Segundo Nombre *" class="form-control"  id="segundoNom" /> 
+                </div>   					
+            </div>	
+            <div class="form-group width-12">
+                <div class="width-6">
+                 <input type="text" placeholder="Primer Apellido *" class="form-control"  id="primerApellido" /> 
+                </div> 
+                <div class="width-6">
+                   <input type="text" placeholder="Segundo Apellido *" class="form-control"  id="segundoApellido" /> 
+               </div>   					
+           </div>	               
+
+			<div class="form-group width-12">
+				<div class="width-6">
+					<input type="text" placeholder="Apellido Casada *" class="form-control"  id="apellidoCasada" /> 
+                </div>
+                <div class="width-6">  
+                    <input type="text" placeholder="Fecha Nacimiento *" id="fechaNac"  class="form-control"/>
+                </div>
+			</div>  	
+					  
+			 </div>
+			 <div class="form-group width-12">
+                  <h3 class="sub-form">Informacion Laboral</h3>
+                  <div class="width-6">
+                    <input type="text" placeholder="Puesto Nominal *" class="form-control"  id="pNom" /> 
+                   </div> 
+                   <div class="width-6">
+                      <input type="text" placeholder="Puesto Funcional *" class="form-control"  id="pFun" /> 
+                    </div> 	  
+             </div>
+
+             <div class="form-group width-12">
+                <div class="width-6">
+                    <input type="text" placeholder="Departamento*" class="form-control"  id="dep" /> 
+                </div>  
+                <div class="width-6">
+                    <input type="email" placeholder="Correo Institucional*" class="form-control"  id="eIns" /> 
+                </div>  
+            </div> 
+             
+            </div>
+            <div class="form-group width-12">
+                 <h3 class="sub-form">Contactos</h3>
+                 <div class="width-4">
+                    <input type="email" placeholder="Correo Personal *" class="form-control"  id="ePer" /> 
+                 </div>
+                 <div class="width-4">
+                    <input type="text" placeholder="Teléfono Casa *" class="form-control"  id="telCasa" /> 
+                 </div> 	  
+                 <div class="width-4">
+                    <input type="text" placeholder="Celular *" class="form-control"  id="Celular" /> 
+                 </div>                			  
+            </div><br><br>                    
+             
+			 <div class="form-group width-12">
+					<input type="submit" value="REGISTRAR" class="form-control btn btn-principal" id="btnRegistrar"/>
+					<input type="submit" value="ACTUALIZAR" class="form-control btn btn-principal" id="btnActualizar"/>
+			 </div>
+	  
+		</form>
+    </section>    
+    <section class="content-form">
+   
+<div class="container">
+    <table class = "table table-bordered table-hover table-dark table-responsive">
+        <thead>
+          <tr>
+            <th>OPERACIONES</th>
+            <th>DPI</th>
+            <th>NIP</th>
+            <th>Primer
+              Nombre</th>
+            <th>Segundo
+              Nombre</th>
+            <th>Primer
+              Apellido</th>
+            <th>Segundo
+              Apellido</th>
+            <th>Fecha
+              Nac</th>
+            <th>Apellido
+              Casada</th>
+            <th>Nominal</th>
+            <th>Funcional</th>
+            <th>@ Institucional</th>
+            <th>@ Personal</th>
+            <th>Tel Casa</th>
+            <th>Celular</th>
+            
+          </tr>
+          
+        </thead>
+        <tbody id="muestratabla"> ** REGISTRO DE EMPLEADOS **
+
+        </tbody>
+
+    </table>
+</div>
+</div>
+    </section>
+</main>
+<footer>	
+	<div class="derechos">
+		<a href="../index.html">Inicio</a><br>	
+		<a href="temporal.html"> Empleado Temporal</a> 
+	</div>
+</footer>
+<script type="text/javascript" src= "../js/crudPermanente.js"></script>
+	
+</body>
+</html>
+ 

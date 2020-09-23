@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Registro Empleado Temporal</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	
+
+</head>
+<body>
+<main role="main">
+
+	<section class="content-form">
+
+		<h2 class="sub-title">DATOS GENERALES</h2>
+
+		<form  id="registrar-form" >
+			<div class="width-4">
+				<input type="text" placeholder="Id *Ingresar para actualizar *" class="form-control" name="dpi" id="id" /> 
+			</div> 		  
+			<div class="form-group width-12">
+				 <div class="width-6">
+				  <input type="text" placeholder="Nombre *" class="form-control" name="nombre" id="nombre" /> 
+				 </div> 								
+			</div>	
+			<div class="form-group width-12">
+				<div class="width-6">
+					<input type="text" placeholder="Puesto *" class="form-control" name="apellidos" id="puesto" /> 
+				</div>  
+			</div>  
+			<div class="form-group width-12">
+				<div class="width-6">
+				 <input type="text" placeholder="Teléfono *" class="form-control" name="telefono" id="telefono" /> 
+				</div> 				
+			</div>		
+					  
+			 </div>
+			 <div class="form-group width-12">
+				  <h3 class="sub-form">Lugar y Fecha de ingreso</h3>
+				  <input type="text" placeholder="Lugar *" class="form-control" name="direccion" id="lugar" />
+				  <input type="text" id ="fecha" nombre="fecha" min="2000-01-01" max="2020-12-31" value="2017-06-01" step="1" class="form-control"/> 
+			 </div><br><br>		
+			 
+			 <div class="form-group width-12">
+					<input type="submit" value="REGISTRAR" class="form-control btn btn-principal" id="btnRegistrar"/>
+					<input type="submit" value="ACTUALIZAR" class="form-control btn btn-principal" id="btnActualizar"/> 
+			 </div>	  
+		</form>
+
+	</section>
+	<section class="content-form">
+
+<div class="container">
+	<table class="table table-bordered table-hover table-dark table-responsive">
+		<thead>
+		  <tr>
+			<th>OPERACIONES</th>
+			<th>Nombre</th>
+			<th>Puesto</th>
+			<th>Lugar de Ingreso</th>
+			<th>Fecha de Ingreso</th>
+			<th>Telefono</th>
+		   
+		  </tr>
+		  
+		</thead>
+		<tbody id="muestratabla">
+			
+		</tbody>
+
+	</table>
+</div>
+</div>
+	</section>
+</main>
+<footer>
+	
+	<div class="derechos">
+		<a href="../index.html">Inicio</a><br>	
+		<a href="permanente.html"> Empleado Permanente</a> 
+	</div>
+</footer>
+<script type="text/javascript" src= "../js/crudTemporal.js"></script>
+	
+</body>
+</html>
+ 
